@@ -1,0 +1,263 @@
+﻿
+.image-wrapper {
+    position: absolute;
+   left: 250px;
+/*  left:-82px;*/
+}
+.heading-wrapper {
+    position: absolute;
+    left: 347px;
+    /* bottom: 300px;*/
+    top: 21px; 
+}
+.shop {
+    position: absolute;
+   left: 460px;
+}
+
+
+.address {
+    position: absolute;
+    right: 221px;
+}
+
+
+.custom-textbox {
+    width: 200px;
+    
+}
+
+.form-group {
+    width: 80%;
+}
+
+
+.name {
+    width: 20%;
+}
+
+
+
+
+.newsletter-section {
+    position: absolute;
+    left: 118px;
+}
+
+
+.paragraph {
+    position: absolute;
+    left: 556px;
+}
+
+
+.teaset {
+    position: absolute;
+    left: 560px;
+    bottom: -250px;
+    width: 500px;
+
+    
+}
+.img1 {
+    width: 200px;
+    height: 150px;
+}
+
+
+.teaset2 {
+    position: absolute;
+    left: 850px;
+    bottom: -100px;
+    width: 500px;
+}
+
+.img2 {
+    position: absolute;
+    /* left: 922px; */
+    bottom: -150px;
+    width: 200px;
+}
+
+.teaset3 {
+    position: absolute;
+    bottom: -100px;
+    left: 1120px;
+    width: 100px;
+}
+
+.img3 {
+    position: absolute;
+    width: 400px;
+    height: 145px;
+    width: 180px;
+}
+.paragraph1 {
+    position: absolute;
+    left: 0px;
+    bottom: -180px;
+    width: 500px;
+}
+
+.paragraph2 {
+    position: absolute;
+    left: 10px;
+    bottom: -180px;
+    width: 700px;
+    top: 205px;
+}
+
+.paragraph3 {
+    position: absolute;
+    left: 10px;
+    bottom: -180px;
+    width: 700px;
+    top: 205px;
+}
+
+
+
+.required {
+    color: red;
+}
+
+.home {
+    position:absolute;
+    left:220px;
+}
+
+.about {
+    position: absolute;
+    left: 280px;
+}
+#contact3 {
+    /*position: absolute;*/
+    left: 320px;
+}
+.img10 {
+    position: absolute;
+    left: 4px;
+    width: 243px;
+    bottom: -175px;
+}
+
+.address1 {
+    position: absolute;
+    bottom: -457px;
+    right: 331px;
+}
+
+
+
+
+.img11 {
+    position: absolute;
+    left: 866px;
+    bottom: -715px;
+    width: 501px;
+    height: 188px;
+}
+
+
+
+body {
+}
+/*.HeaderTea {
+float:left;*/ /* Move the image to the right */
+/* You can adjust margin if needed */
+/* margin-right: 20px; */
+/*margin-left: auto;*/
+/*}*/
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper {
+    flex: 0 0 auto; /* Let the image container grow and shrink as needed */
+}
+
+.heading-wrapper {
+    flex: 1; /* Let the heading container take up remaining space */
+    text-align: left; /* Align the heading to the right */
+}
+
+.heading-wrapper h2 {
+        font-size: 24px; /* Adjust the font size of the heading */
+        margin-bottom: 0; /* Add some space below the heading */
+}
+.heading-wrapper p {
+        font-size: 12px; /* Adjust the font size of the secondary text */
+        margin-top: 0;
+}
+
+.address p {
+    margin: 0; /* Remove margin for all paragraphs inside .address */
+    text-align: center;
+}
+
+/*menu bar css*/
+
+.menu-bar {
+    background-color: black; /* Background color of the menu bar */
+}
+.menu-bar ul {
+        list-style-type: none; /* Remove default list styles */
+        margin: 0;
+        padding: 0;
+        display: flex; /* Use flexbox to arrange items horizontally */
+}
+
+.menu-bar ul li {
+            margin-right: 10px; /* Add some spacing between menu items */
+ }
+.menu-bar ul li:last-child {
+                margin-right: 0; /* Remove margin from the last menu item */
+}
+
+.menu-bar ul li a {
+                display: block;
+                color: white; /* Text color */
+                padding: 5px 10px; /* Adjust padding to make the menu items smaller */
+                font-size: 14px; /* Adjust font size to make the menu items smaller */
+                text-decoration: none; /* Remove underline from links */
+}
+.menu-bar ul li a:hover {
+                    background-color: #555; /* Background color on hover */
+}
+
+
+
+
+
+
+.backimage {
+    position: relative; /* Container relative for absolute positioning of children */
+    width: 100vw; /* Viewport Width: Ensures it spans the full width of the viewport */
+    height: 70vh; /* Viewport Height: Ensures it spans the full height of the viewport */
+    overflow: hidden; /* Prevents any overflow */
+}
+
+.background-image {
+    position: absolute; /* Absolute position within its parent */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures it covers the full width of its container */
+    height: 100%; /* Ensures it covers the full height of its container */
+    object-fit: cover; /* Scales the image nicely to cover available space */
+}
+
+.overlay-image {
+    position: absolute; /* This positions the image on top of the background */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    width: 1160px; /* Example width, adjust according to your need */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+

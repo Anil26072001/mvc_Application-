@@ -1,0 +1,56 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model FileUploadOperation.Models.Register
+
+<h1>Update User Registration Form in asp.net core mvc </h1>
+<div class="row">
+    <div class="col-md-8">
+        <form asp-controller="Home" asp-action="Edit">
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" placeholder="Enter Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" placeholder="Enter valid Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ConfirmPassword" class="form-cotrol"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+            </div>
+
+            <div class="form-group">
+                <p>@ViewBag.Message</p>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <a href="/Home/Index">
+            <input type="button" value="ListUser" class="btn btn-dark" />
+        </a>
+    </div>
+
+    <br />
+
+</div>

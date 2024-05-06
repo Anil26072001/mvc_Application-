@@ -1,0 +1,169 @@
+﻿
+
+@* @*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>File Upload</title>
+</head>
+<body>
+
+
+    <div class="col-4 upload-container">
+        <h2>File Upload</h2>
+        <div class="mb-3">
+            <input type="file" id="fileInput" name="filename" class="form-control" multiple /><br />
+            <div id="BootStrapErroMsg" class="alert alert-danger" role="alert"style="display:none">
+                <span id="ErrorfileIcons" class="material-icons material-icons-outlined Iconcolor">error_outline</span>
+                <span id="Errormesssagefile" class="text-danger textColor"></span>
+            </div>
+        </div>
+        <div class="mb-3">
+            <input type="submit" id="btnuploadfileId" value="Upload File" class="btn btn-primary" />
+            <div id="Errormessagebutton"></div>
+        </div>
+        <span id="SuccessMessage" class="text-success">@ViewBag.Message</span>
+        <spam class=" text-success">
+                @ViewBag.msg </spam>
+    </div>
+        <!-- Modal -->
+    <div class="modal fade" id="fileReplaceModal" tabindex="-1" role="dialog" aria-labelledby="fileReplaceModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="fileReplaceModalLabel">File Replacement Options</h5>
+                    <b type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </b utton>
+                </div>
+                <div class="modal-body">
+                    <p>What would you like to do with the existing file?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="replaceBtn">Replace</button>
+                    <button type="button" class="btn btn-secondary" id="versionBtn">Save as New VersionNumber</button>
+                    <button type="button" class="btn btn-secondary"  data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Popup for File Exists -->
+    <div id="fileExistsPopup" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">File with the same name already exists</h5>
+                   
+                </div>
+                
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="replaceFileBtn">Replace</button>
+                    <button type="button" class="btn btn-secondary" id="saveNewVersionBtn">Save as New Version</button>
+                    <button type="button" class="btn btn-secondary" id="Cancelbtn" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="~/js/file.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @* @*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+} @* <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="~/css/file.css" rel="stylesheet" />
+      
+
+<div class=" text-center">
+    <h1 class="display-4"> FileUpload</h1>
+</div>
+<div class=" mb-3" mt-3">
+    <form method="post" enctype="multipart/form-data" id="FileForm">
+        <div class=" mb-3">
+             <label class="form-label">  UploadFile   </label> 
+            <input type="file"  id="txtFile" name="file" multiple />
+            <br />
+            <span id="ErrorMessage"></span>
+
+            <span id="IconError" style="display:none" class="material-icons material-icons-outlined">
+                error_outline
+            </span><br />
+            <input type="submit" id="UploadButton" value="Upload" class="btn btn-primary" />
+            
+            <spam class=" text-success">
+                @ViewBag.msg
+            </spam>
+
+            
+            <script src="~/js/file.js">
+            </script>
+            <link rel="stylesheet" href="~/css/file.css>
+            
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </form>
+    
+</div>
+   *@
+
+

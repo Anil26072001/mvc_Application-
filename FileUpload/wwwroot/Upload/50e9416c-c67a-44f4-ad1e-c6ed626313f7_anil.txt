@@ -1,0 +1,18 @@
+client side validation using jqury
+2.using of html writting pages
+3.js,css 
+4.try catch blocks
+5.soft delete
+6.custimized routing
+7.DI for curd operations   -com
+8.gloable variable  no 
+
+prevent default 
+
+filter
+
+submit
+authenticatiom
+regular experi
+space starting its notallow
+in b/w its allow

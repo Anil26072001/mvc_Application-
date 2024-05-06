@@ -1,0 +1,15 @@
+﻿#ErrorMessage {
+    color: red;
+    font-size: 20px;
+    margin-top: 5px; /* Adjust as needed */
+}
+
+/* Error icon style */
+#IconError {
+    color: red;
+    font-size: 20px;
+    margin-left: 5px; /* Adjust as needed */
+    display: none; /* Initially hide the error icon */
+}
+
+

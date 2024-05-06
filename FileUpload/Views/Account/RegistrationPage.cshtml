@@ -1,0 +1,205 @@
+﻿@model FileUploadOperation.Models.Register;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/RegisterPage.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="~/css/registration.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+<body style="color:dodgerblue">
+    <div class="container">
+        <h2 class="mb-4">Registration Form</h2>
+        <form id="registrationForm" action="/Account/RegistrationPage" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control">
+                <div id="nameError" class="invalid-feedback"></div>
+                <span id="nameErrorIcon" class="material-icons material-icons-outlined Iconcolor" style="display:none">error_outline</span>
+
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control">
+                <div id="emailError" class="invalid-feedback"></div>
+                <span id="emailErrorIcon" class="material-icons material-icons-outlined Iconcolor" style="display:none">error_outline</span>
+
+                
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control">
+                <div id="passwordError" class="invalid-feedback"></div>
+                <span id="passwordErrorIcon" class="material-icons material-icons-outlined Iconcolor" style="display:none">error_outline</span>
+
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="form-control">
+                <div id="confirmPasswordError" class="invalid-feedback"></div>
+                <span id="confirmPasswordErrorIcon" class="material-icons material-icons-outlined Iconcolor" style="display:none">error_outline</span>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="btnReister">Register</button>
+
+           
+        </form>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="~/js/site.js">
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: skyblue; /* Change background color to skyblue */
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input.form-control {
+            border-radius: 5px;
+        }
+
+        .invalid-feedback {
+            color: #dc3545;
+            display: none;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+            button[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+
+        .is-valid, .is-invalid {
+            border-color: initial !important; /* Reset border color */
+            box-shadow: none !important; /* Reset box shadow */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-4">Welcome to Registration Form</h2>
+        </div>
+        <form id="registrationForm" asp-action="Registrationpage" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control">
+                <div id="nameError" class="invalid-feedback"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control">
+                <div id="emailError" class="invalid-feedback"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control">
+                <div id="passwordError" class="invalid-feedback"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="form-control">
+                <div id="confirmPasswordError" class="invalid-feedback"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/site.js">
+    </script>
+</body>
+</html>
+
+
+ *@

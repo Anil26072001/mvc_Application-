@@ -1,0 +1,23 @@
+﻿@model FileUploadOperation.Models.Register
+<p>@ViewBag.Message</p>
+
+<div>
+    <form asp-controller="Account" asp-action="DeleteUser">
+        <table cellpadding="2" cellspacing="2">
+            <tr>
+                <td>Id</td>
+                <td>
+                    <input type="text" asp-for="id" />
+                    <input type="text" asp-for="Name" />
+                    <input type="text" asp-for="Email" />
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" value="Delete" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

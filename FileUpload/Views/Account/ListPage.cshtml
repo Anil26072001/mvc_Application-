@@ -1,0 +1,33 @@
+﻿@model IEnumerable<FileUploadOperation.Models.Register>
+
+<h1>List of users</h1>
+
+<a href="/Account/AddUser">
+    AddUser<a />
+
+
+    <table class="table" border="1">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Delete</th>
+                <th>Edit</th>
+                <th>View</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.id</td>
+                    <td>@user.Name</td>
+                    <td>@user.Email</td>
+                    <td>@Html.ActionLink("Delete", "Delete", new { id = user.id })</td>
+                    <td>@Html.ActionLink("Edit", "Edit", new { id = user.id })</td>
+                    <td>@Html.ActionLink("view", "view", new { id = user.id })</td>
+                </tr>
+            }
+        </tbody>
+    </table>
